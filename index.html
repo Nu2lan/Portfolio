@@ -31,7 +31,7 @@
 </head>
 
 <body> <!-- FOR DARK MODE: Add class "dark" Example: <body class="dark"> -->
-	
+
 	<!-- PRELOADER -->
 	<div id="preloader">
 		<div class="loader_line"></div>
@@ -52,7 +52,11 @@
 		</div>
 	</div>
 	<!-- /MODALBOX NEWS -->
-	
+
+	<audio id="myAudio" autoplay>
+		<source src="audio/Eyyub.mp3" type="audio/mpeg">
+	</audio>
+
 	<!-- TOPBAR -->
 	<div class="grax_tm_topbar">
 		<div class="container">
@@ -67,6 +71,7 @@
 						<li><a href="#about">About Me</a></li>
 						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#contact">Contact</a></li>
+						<li><button id="toggleButton" class="audio-button" onclick="toggleAudio()">Click Me</li>				
 					</ul>
 				</div>
 			</div>
@@ -293,7 +298,7 @@
 							<span><span class="label">Figma, Draw.io</span><span class="number"></span></span>
 							<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
 						</div>
-						<div class="progress_inner" data-value="90">
+						<div class="progress_inner" data-value="80">
 							<span><span class="label">Confluence, Notion</span><span class="number"></span></span>
 							<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
 						</div>
@@ -305,7 +310,7 @@
 							<span><span class="label">Office</span><span class="number"></span></span>
 							<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
 						</div>
-						<div class="progress_inner" data-value="80">
+						<div class="progress_inner" data-value="95">
 							<span><span class="label">Trello</span><span class="number"></span></span>
 							<div class="background"><div class="bar"><div class="bar_in"></div></div></div>
 						</div>
@@ -451,7 +456,22 @@
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
 <script src="js/plugins.js"></script>
 <script src="js/init.js"></script>
+<script>
+    function toggleAudio() {
+        var audio = document.getElementById("myAudio");
+        var button = document.getElementById("toggleButton");
+
+        if (audio.paused) {
+            audio.play();
+            button.textContent = "Click Me"; // Change button text to "Pause"
+        } else {
+            audio.pause();
+            button.textContent = "Click Me"; // Change button text to "Play"
+        }
+    }
+</script>
 <!-- /SCRIPTS -->
+
 
 </body>
 </html>
