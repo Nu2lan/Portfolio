@@ -2328,7 +2328,7 @@ body.dark .grax_tm_settings .cursor li .svg,
 
 
 
-.audio-button {
+.grax_tm_button .audio-button {
 	background-color: #fa5b0f; /* Orange background */
 	border: 2px solid #fa5b0f; /* Remove borders */
 	color: white; /* White text */
@@ -2342,6 +2342,8 @@ body.dark .grax_tm_settings .cursor li .svg,
 	cursor: pointer; /* Pointer cursor on hover */
 	margin-top: 15px;
 	border-radius: 20px; /* Rounded corners */
+	animation: buttonBounce 1s infinite; /* Animation name and duration */
+    animation-delay: 0.2s; /* Delay in seconds */
 
 	-webkit-transition: all .3s ease;
 	   -moz-transition: all .3s ease;
@@ -2356,6 +2358,14 @@ body.dark .grax_tm_settings .cursor li .svg,
 	border-color: transparent;
 }
 
+@keyframes buttonBounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Slight bounce */
+    }
+}
 
 /*---------------------------------------------------*/
 /*	14) GRAX MEDIA QUERIES (FOR SMALL DEVIVES)
