@@ -52,10 +52,6 @@
 	</div>
 	<!-- /MODALBOX NEWS -->
 
-	<audio id="myAudio" autoplay>
-		<source src="audio/Eyyub.mp3" type="audio/mpeg">
-	</audio>
-
 	<!-- TOPBAR -->
 	<div class="grax_tm_topbar">
 		<div class="container">
@@ -126,9 +122,6 @@
 				<div class="details" data-animation="scale"> <!-- Animation Values: toTop, toRight, scale, rotate -->
 					<h3 class="fn_animation name">Nurlan İbrahimov</h3>
 					<span class="fn_animation job">Open to work as Product Owner</span>
-					<div class="grax_tm_button">
-						<a id="toggleButton" class="fn_animation audio-button" onclick="toggleAudio()">Click Me</a>
-					</div>
 				</div>
 				<div class="grax_tm_down" data-skin="light">
 					<div class="line_wrapper">
@@ -202,7 +195,7 @@
 							</ul>
 						</div>
 						<div class="grax_tm_button">
-							<a href="img/resume/Nurlan_İbrahimov_CV.pdf" download>Get my CV</a>
+							<a href="img/resume/Nurlan_İbrahimov_CV.pdf" download>Get My CV</a>
 						</div>
 					</div>
 				</div>
@@ -418,8 +411,8 @@
             </div>
 			<div class="container">
 				<div class="copyright_inner">
-					<div class="logo wow fadeInLeft" data-wow-duration="1s">
-						<img src="img/logo/logo.png" alt="" />
+					<div class="logo fadeInLeft" data-wow-duration="1s">
+						<a href="#"><img class="light" src="img/logo/logo.png" alt="" /></a>
 					</div>
 					<div class="social wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
 						<ul>
@@ -459,20 +452,6 @@
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
 <script src="js/plugins.js"></script>
 <script src="js/init.js"></script>
-<script>
-    function toggleAudio() {
-        var audio = document.getElementById("myAudio");
-        var button = document.getElementById("toggleButton");
-
-        if (audio.paused) {
-            audio.play();
-            button.textContent = "Click Me"; // Change button text to "Pause"
-        } else {
-            audio.pause();
-            button.textContent = "Click Me"; // Change button text to "Play"
-        }
-    }
-</script>
 <!-- /SCRIPTS -->
 
 

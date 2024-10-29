@@ -2326,47 +2326,6 @@ body.dark .grax_tm_settings .cursor li .svg,
     animation: myAnimPrice 2s infinite .6s
 }
 
-
-
-.grax_tm_button .audio-button {
-	background-color: #fa5b0f; /* Orange background */
-	border: 2px solid #fa5b0f; /* Remove borders */
-	color: white; /* White text */
-	padding: 10px 35px; /* Padding */
-	text-align: center; /* Center the text */
-	position: absolute;
-	text-decoration: none; /* Remove underline */
-	display: inline-block; /* Display inline */
-	font-family: "Poppins";
-	font-size: 16px; /* Increase font size */
-	cursor: pointer; /* Pointer cursor on hover */
-	margin-top: 15px;
-	border-radius: 20px; /* Rounded corners */
-	animation: buttonBounce 1s infinite; /* Animation name and duration */
-    animation-delay: 0.2s; /* Delay in seconds */
-
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-
-.audio-button:hover {
-	background-color: #bb3d03 !important;
-	color: #ffffff;
-	border-color: transparent;
-}
-
-@keyframes buttonBounce {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1); /* Slight bounce */
-    }
-}
-
 /*---------------------------------------------------*/
 /*	14) GRAX MEDIA QUERIES (FOR SMALL DEVIVES)
 /*---------------------------------------------------*/
